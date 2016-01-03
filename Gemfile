@@ -37,6 +37,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 group :development, :test do
   gem 'rspec-rails', '3.2.3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'guard-rspec', require: false
+  gem 'spring-commands-rspec'
   gem 'byebug'
 end
 
