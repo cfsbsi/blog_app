@@ -15,7 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise', '~>3.5.1'
 
 group :development, :test do
-  gem 'rspec-rails', '3.2.3'
+  gem 'rspec-rails', '~> 3.0'
   gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'
   gem 'byebug'
