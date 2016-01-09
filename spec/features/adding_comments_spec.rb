@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature "Adding Reviews to Articles" do
+	
 	before do
 		@john = User.create(email: "john@example.com", password: "password")
 		@fred = User.create(email: "fred@example.com", password: "password")
@@ -20,7 +21,6 @@ RSpec.feature "Adding Reviews to Articles" do
 		expect(page).to have_content("Comment has been created")
 		expect(page).to have_content("An awesome article")
 		expect(current_path).to eq(article_path(@article.comments.last.id))
-		
 	end
 	
 end
